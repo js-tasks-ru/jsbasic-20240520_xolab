@@ -1,3 +1,5 @@
 function sum(m, n) {
-  // ваш код...
+  return m + n;
 }
+
+sum(2, 2);
