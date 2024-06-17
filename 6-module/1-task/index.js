@@ -16,7 +16,7 @@ function createElement(html) {
   const div = document.createElement('div');
   div.innerHTML = html;
   return div.firstElementChild;
-};
+}
 
 export default class UserTable {
   elem = null;
@@ -31,7 +31,7 @@ export default class UserTable {
   #template() {
     return `
         <table>
-            ${this.#rows.map(({name, age, salary, city}, index) =>
+            ${this.#rows.map(({name, age, salary, city}) =>
       `<tr>
                 <td>${name}</td>
                 <td>${age}</td>
